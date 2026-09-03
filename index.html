@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FamilyNote</title>
+<meta name="description" content="FamilyNote, l'appli qui vous souffle de prendre des nouvelles de vos proches. Sans compte, sans serveur : tout reste sur votre téléphone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --lagon: #16A79A;
+    --lagon-sombre: #0C8377;
+    --lagon-doux: #E2F4F1;
+    --texte: #3C3C43;
+    --texte-doux: #71717A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', 'Segoe UI', system-ui, sans-serif;
+    background: var(--lagon);
+    color: #FFFFFF;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  main { max-width: 560px; }
+  h1 { font-weight: 900; font-size: 44px; letter-spacing: -0.8px; }
+  .tagline { margin-top: 8px; font-size: 20px; font-weight: 600; color: var(--lagon-doux); }
+  p.pitch { margin-top: 20px; font-size: 17px; line-height: 1.6; color: #F2FAF9; }
+  .links { margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .links a {
+    display: inline-block;
+    background: #FFFFFF;
+    color: var(--lagon-sombre);
+    font-weight: 800;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 999px;
+  }
+  .links a.ghost {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  footer { margin-top: 40px; font-size: 14px; color: var(--lagon-doux); }
+</style>
+</head>
+<body>
+<main>
+  <h1>FamilyNote</h1>
+  <p class="tagline">Le petit signe du jour</p>
+  <p class="pitch">On aime ses proches, et pourtant les semaines passent vite. FamilyNote vous
+  souffle de prendre des nouvelles, aux jours que vous choisissez. Sans compte, sans serveur,
+  sans publicité : tout reste sur votre téléphone.</p>
+  <div class="links">
+    <a href="./confidentialite.html">Politique de confidentialité</a>
+    <a class="ghost" href="./conditions.html">Conditions d’utilisation</a>
+  </div>
+  <footer>FamilyNote est éditée par Raphael Ferrandis · raphaelferrandis@gmail.com</footer>
+</main>
+</body>
+</html>
